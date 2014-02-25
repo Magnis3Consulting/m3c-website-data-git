@@ -138,6 +138,8 @@ body {
 	min-height: 812px;
 	padding: 20px 0 50px;
 	width: 960px;
+	font-family: Helvetica;
+	font-size: 13px;
 }
 #body > ul {
 	margin: 0;
@@ -498,14 +500,14 @@ body {
 	color: #252525;
 }
 #body .sidebar {
-	background: url(../images/bg-sidebar_180.jpg) repeat-y top left;
+	background: repeat-y top left;
 	float: left;
 	margin: 0 10px 82px 0;
 	padding: 0;
 	width: 180px;
 }
 #body .sidebar h4 {
-	background: url(../images/bg-sidebar-heading_180.jpg) no-repeat 0 0;
+	background:  no-repeat 0 0;
 	color: #2f394e;
 	font-family: 'Comfortaa-Regular';
 	font-size: 20px;
@@ -528,7 +530,7 @@ body {
 	text-transform: capitalize;
 }
 #body .sidebar ul {
-	background: url(../images/bg-sidebar-footer_180.jpg) no-repeat bottom left;
+	background:  no-repeat bottom left;
 	margin: 0;
 	padding: 0 20px 50px;
 }
@@ -539,21 +541,20 @@ body {
 	padding: 0 0 24px;
 }
 #body .sidebar ul li span {
-	color: #2f394e;
+	color: #ffffff;
 	display: block;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 12px;
 	letter-spacing: 0.01em;
 	line-height: 24px;
 	margin: 0;
 	padding: 0;
 }
 #body .sidebar ul li span a {
-	color: #2f394e;
+	color: #fffff;
 	text-decoration: none;
 }
 #body .sidebar ul li span a:hover {
-	color: #4c8f97;
+	color: #fffff;
 }
 #body .sidebar ul li p {
 	color: #000;
