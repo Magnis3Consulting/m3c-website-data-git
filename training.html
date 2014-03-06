@@ -5,6 +5,47 @@
 	<title>Magnis 3 Consulting</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/SpryMenuBarHorizontal.css" type="text/css">
+	 <style type="text/css">
+        body { font-family:Arial, Helvetica, Sans-Serif; font-size:0.8em;}
+        #report { border-collapse:collapse;}
+        #report h4 { margin:0px; padding:0px;}
+        #report img { float:right;}
+        #report ul { margin:10px 0 10px 40px; padding:0px;}
+        #report th { background:#355E49 repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
+        #report td { background:#87CDAA none repeat-x scroll center left; color:#000; padding:7px 15px; }
+        #report tr.odd td { background:#87CDAA  repeat-x scroll center left; cursor:pointer; }
+        #report div.arrow { background:transparent url(images/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+        #report div.up { background-position:0px 0px;}
+    </style>
+    
+     <style type="text/css">
+        body { font-family:Arial, Helvetica, Sans-Serif; font-size:0.8em;}
+        #report1 { border-collapse:collapse;}
+        #report1 h4 { margin:0px; padding:0px;}
+        #report1 img { float:right;}
+        #report1 ul { margin:10px 0 10px 40px; padding:0px;}
+        #report1 th { background:#355E49 repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
+        #report1 td { background:#87CDAA none repeat-x scroll center left; color:#000; padding:7px 15px; }
+        #report1 tr.odd td { background:#87CDAA  repeat-x scroll center left; cursor:pointer; }
+        #report1 div.arrow { background:transparent url(images/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+        #report1 div.up { background-position:0px 0px;}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">  
+    $(document).ready(function(){
+        $("#report tr:odd").addClass("odd");
+        $("#report tr:not(.odd)").hide();
+        $("#report tr:first-child").show();
+        
+        $("#report tr.odd").click(function(){
+            $(this).next("tr").toggle();
+            $(this).find(".arrow").toggleClass("up");
+        });
+        $("#report").jExpand();
+    });
+    </script>        
+	
+	
 	<style>
 		#customers{
 			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -61,7 +102,7 @@
 							<a href="services.html">Services</a>
 						</li>
 						<li>
-							<a href="clients.html">Clients</a>
+							<a href="clients.html">Partners</a>
 						</li>
 						<li>
 							<a href="about.html">About</a>
@@ -74,6 +115,8 @@
 			
 			</div>
 	<div id="body">
+<br>
+ <br>
 		<div >
 			<div class="sidebar">
 				
@@ -96,8 +139,249 @@
 				<!-- <p><input type="image" name="imageField1" id="imageField1" src="./images/Training1.jpeg" /></p>
 				<p><input type="image" name="imageField1" id="imageField1" src="./images/Training2.jpeg" /></p>
 				<p><input type="image" name="imageField1" id="imageField1" src="./images/Training3.jpeg" /></p> -->
-				<object data=Training_Services.htm width="700" height="400"> <embed src=Training_Services.htm width="700" height="400"> </embed> Error: Embedded data could not be displayed. </object>
-			</div>			
+<!-- 				<object data=Training_Services.htm width="700" height="400"> <embed src=Training_Services.htm width="700" height="400"> </embed> Error: Embedded data could not be displayed. </object>
+ -->			
+ 
+ 
+ 
+ <table id="report" width="90%">
+        <tr>
+            <th>Training services (IT Services)</th>
+           <!--  <th>Population</th>
+            <th>Area</th>
+            <th>Official languages</th> -->
+            <th></th>
+            
+        </tr>
+        <tr>
+            <td >Programming / Automation Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+           <td colspan="2"><h4>IT Training</h4>
+           		<ul>
+                    <li>C, C++, Structural / Procedural Programming</li>
+                    <li>Core Java, Object Oriented Programming</li>
+                    <li>Data Structures</li>
+                    <li>Puppet: System Automation</li>
+                </ul>
+           		<ul>
+                    <li>Perl Scripting</li>
+                    <li>.Net</li>
+                    <li>Web Development</li>
+                    <li>Selenium</li>
+                </ul>
+           </td>
+        </tr>
+        <tr>
+            <td >Software Configuration, Build & Release Training's </td>
+            
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               
+                <h4>IT Services</h4>
+                <ul>
+                    <li>Clearcase</li>
+                    <li>Subversion</li>
+                    <li>GIT</li>
+                    
+                </ul>
+
+                <ul>
+                    <li>Maven: Build Technology</li>
+                    <li>Jenkins: Continuos Integration</li>
+                    <li>Nexus: Artefact Repository</li>
+                    
+                </ul>
+
+                
+            </td>
+        </tr>
+        <tr>
+            <td >Infrastructure Related Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h4>IT Services</h4>
+                <ul>
+                    <li>Hardware & Networking</li>
+                    <li>Cloud Computing</li>
+                    <li>Systems Administration</li>
+                 </ul>   
+                             
+            </td>
+        </tr>
+               <tr>
+            <td >Business Analytics Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h4>IT Services</h4>
+                <ul>
+                    <li>Basic &amp; Advanced Excel</li>
+                    <li><a href="#basics">Basic &amp; Advanced Statistics</a></li>
+                    <li>Data Visualisation with R</li>
+                 </ul>   
+                             
+            </td>
+        </tr>
+                 <tr>
+            <td >Service Management Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <h4>Management programs</h4>
+                <ul>
+                    <li><a href ="#ITIL">ITIL Foundation</a></li>
+                    <li>ITIL Intermediate</li>
+                    <li>ISO 20K / 27K</li>
+                 </ul>   
+                 <ul>
+                    <li>Lean - Six Sigma </li>
+                    <li>Customized Service Management</li>
+                    <li>ITSM Tools</li>
+                 </ul>             
+            </td>
+        </tr>
+                 <tr>
+            <td >Project Management Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <h4>Project Management Programs</h4>
+                <ul>
+                    <li>Scrum</li>
+                    <li>Agile</li>
+                    <li>PMO Setup</li>
+                    <li>PRINCE 2</li>
+                    
+                 </ul>   
+                             
+            </td>
+        </tr>
+           </tr>
+                 <tr>
+            <td >Soft Skills Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <h4>Skills Trained on</h4>
+                <ul>
+                    <li>Personality Development</li>
+                    <li>SWOT Analysis </li>
+                    <li>Time Management </li>
+                    <li>Interpersonal Skills</li>
+                    <li>Goal Setting</li>
+                    
+                 </ul>   
+                    <ul>
+                    <li>Coaching</li>
+                    <li>Stress Management </li>
+                    <li>Conflict Management </li>
+                    <li>Communication Skills</li>
+                    <li>Change Management</li>
+                    
+                 </ul> 
+                             
+            </td>
+        </tr>
+        <tr>
+            <td >Leadership Training's</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <h4>LeaderShips</h4>
+                <ul>
+                    <li>Junior Corporate Leadership Program</li>
+                    <li>Senior Corporate Leadership Program</li>
+                                      
+                 </ul>   
+                             
+            </td>
+        </tr>
+     </table>
+    
+		<br>
+		<br>
+		<Table id="report1"  width="90%">
+		<tr>
+		<td><p id="ITIL"><b>ITIL Basics:</b>
+			<ul>
+			<li>Introduction to Service Management</li>
+			<li>Need and Evolution of Service Management</li>
+			<li>The IT- Business Alignment and the Service Lifecycle Approach</li> 
+			<li>Terminology &amp; Concepts</li>
+			<li>Five Phases of ITIL</li>
+			<li>KPI's, Metrics and CSF's for ITIL processes</li> 
+			<li>Consideration for ITSM Tools</li>
+			</ul></td>
+			<td><b>ITIL Advanced</b>
+			<ul>
+				<li>Introduction</li>
+				<li>Principles</li>
+				<li>Processes</li>
+				<li>Governance</li>
+				<li>Model Expectations</li>
+				<li>Implementation</li>
+				<li>Challenges/ Critical Factors</li>
+				<li>Summary/ Case studies</li>
+				<li>Elaborated depending on the module</li>
+					
+				<ul>
+					<li>Service Strategy</li>
+					<li>Service Design</li>
+					<li>Service Transition</li>
+					<li>Service Operations</li>
+					<li>Continual Service Improvements</li>
+				</ul>
+
+			</ul>
+		</p></td>
+		</tr>
+		<tr>
+		<td><p id="basics">
+			<b>Basic Statistics:</b>
+			<ul>
+				<li>Basic Concepts</li>
+				<li>Measures of central tendency & Dispersion</li>
+				<li>Data Cleaning / Validation</li>
+				<li>Sampling techniques</li>
+				<li>Probability and distributions</li>
+				<li>Charts/ Graphs</li>
+				<li>Hypothesis testing / Confidence intervals</li>
+				<li>Correlation</li>
+				<li>Statistical Process Control (SPC)</li>
+				<li>Simple linear Regression</li>
+				<li>One way ANOVA</li>
+				<li>Introduction to advanced statistics</li>
+			</ul></td>
+			<td><b>Advanced Statistics:</b>
+			<ul>
+				<li>Introduction</li>
+				<li>Recap to basic statistics</li>
+				<li>Multiple regression</li>
+				<li>Nonlinear regression</li>
+				<li>Multiple ANOVA</li>
+				<li>Principal Component analysis</li>
+				<li>Time series analysis</li>
+				<li>Design of experiment</li>
+				<li>Simulation / Modeling</li>
+				<li>Non Normal distributions</li>
+				<li>Bayesian Networks</li>
+				<li>Decision Theory</li>
+				
+			</ul>
+		</p></td></tr>
+		</Table>
+ 			</div>			
 		</div>
 	</div>
     <div id="footerCopyright">
